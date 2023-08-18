@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+:root {
+    --primary-color: #212529;
+    --secondary-color: #4dff91;
+    --tertiary-color: #f1f5f9;
+    --quaternary-color: #aaa;
+    --transtition-time: 0.2s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transtition-time);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 640px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+#settings {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#theme-switcher {
+    background-color: transparent;
+    color: var(--quaternary-color);
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid var(--quaternary-color);
+    border-radius: 1rem;
+    outline: none;
+    transition: var(--transtition-time);
+}
+
+#theme-switcher:hover {
+    color: var(--primary-color);
+    background-color: var(--quaternary-color);
+}
+
+#math-notation-input-group h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#math-notation-input-group > input,
+#math-notation-input-group > label {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(140px, auto) repeat(5, 90px);
+    gap: 0.4rem;
+}
+
+#display {
+    background-color: transparent;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border: 3px solid var(--quaternary-color);
+}
+
+#previous-operand {
+    color: var(--tertiary-color);
+    min-height: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#copy-btn-and-current-operand {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#copy-to-clipboard {
+    background-color: transparent;
+    color: var(--quaternary-color);
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 2px solid var(--quaternary-color);
+    border-radius: 0.2rem;
+    outline: none;
+    transition: var(--transtition-time);
+}
+
+#copy-to-clipboard:hover {
+    color: var(--primary-color);
+    background-color: var(--quaternary-color);
+}
+
+#current-operand {
+    color: var(--tertiary-color);
+    font-size: 2.5rem;
+    width: 80%;
+    text-align: right;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+main > button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.1rem;
+    outline: none;
+    transition: calc(var(--transtition-time) / 2);
+}
+
+main > button:hover {
+    opacity: 0.75;
+}
+
+.wider-btn {
+    grid-column: span 2;
+}
+
+[data-backspace] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+
+.copied {
+    border-color: var(--secondary-color) !important;
+    color: var(--secondary-color) !important;
+}
