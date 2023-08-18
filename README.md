@@ -1,6 +1,6 @@
 # Calculadora Web App (PT-BR)
 
-Esta aplicação web trata-se de uma calculadora com as quatro operações básicas da matemática. Deploy link: <https://thiagosoutodev.github.io/calculatorProject/>.
+Esta aplicação web trata-se de uma calculadora com as quatro operações básicas da matemática. Deploy link: <https://thiagosoutodev.github.io/calculator-web-app/>.
 
 ---
 
@@ -33,7 +33,7 @@ Projeto desenvolvido apenas com fins educacionais.
 
 # Calculator Web App (EN)
 
-This web application is a calculator with the four basic mathematical operations. Deploy link: <https://thiagosoutodev.github.io/calculatorProject/>.
+This web application is a calculator with the four basic mathematical operations. Deploy link: <https://thiagosoutodev.github.io/calculator-web-app/>.
 
 ---
 
